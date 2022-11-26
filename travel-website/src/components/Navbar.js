@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faRocket, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars/*, faRocket*/, faX } from "@fortawesome/free-solid-svg-icons";
 import { Button } from './Button';
 import './Navbar.css';
 
@@ -37,7 +37,7 @@ function Navbar() {
             <div className="navbar-container">
 
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    TRVL <FontAwesomeIcon icon={faRocket} />
+                    TRVL <i class='fab fa-typo3' />
                 </Link>
 
                 <div className="menu-icon" onClick={handleClick}>
@@ -61,7 +61,7 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/'sign-up className='nav-links-mobile' onClick={closeMobileMenu}>
+                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                             Sign Up
                         </Link>
                     </li>
